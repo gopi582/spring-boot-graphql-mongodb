@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user-config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/full-stack-org/user-details-service-git-config-files
+  profiles:
+    active: dev
+          
+    
+server:
+  port: 8888
+  
+  

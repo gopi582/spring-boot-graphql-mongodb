@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: login-update-password-service
+    
+server:
+  port: 8082
+    
+  
+

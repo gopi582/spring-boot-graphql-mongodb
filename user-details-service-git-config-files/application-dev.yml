@@ -1,0 +1,9 @@
+user:
+ service:
+   name: login-service
+   data: initial data 
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

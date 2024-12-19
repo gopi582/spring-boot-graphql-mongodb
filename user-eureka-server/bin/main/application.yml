@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: user-eureka-server
+    
+server:
+  port: 8761
+  
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    eureka-connection-idle-timeout-seconds: 50
+    eureka-server-connect-timeout-seconds: 50

@@ -1,0 +1,38 @@
+type Query {
+getAllUsers:[UserEntity]
+getUserById(userId:Int):UserEntity
+validateUser(userId:String, password: String):UserEntity
+}
+
+type UserEntity{
+ id:ID
+ name:String
+ userId:String
+ password:String
+ addressEntity:AddressEntity 
+}
+
+type AddressEntity{
+addressLine1:String
+street:String
+pinCode:String
+}
+
+type Mutation {
+createUser(userRequest: UserRequest): UserEntity
+updatePassWord(id:Int,password: String): UserEntity
+}
+
+input UserRequest{
+ id:Int
+ name:String
+ userId:String
+ password:String
+ addressRequest:AddressRequest
+}
+
+input AddressRequest{
+addressLine1:String
+street:String
+pinCode:String
+}

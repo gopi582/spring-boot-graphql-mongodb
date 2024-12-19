@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+  graphql:
+    graphiql:
+      path: /graphiql
+      enabled: true
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@fullstack.w5t0x.mongodb.net
+      database: user_db
+  profiles:
+    active: dev
+    
+server:
+  port: 8081 
+  servlet:
+    context-path: /user
